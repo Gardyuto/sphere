@@ -1,0 +1,133 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.G_sphere {
+    width: 100vh;
+    height: 690px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coll {
+    background-color: rgba(0, 123, 230, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 20px solid rgb(0, 238, 255);
+    border-radius: 50%;
+    position: absolute;
+    box-shadow:0px 0px 30px rgb(0, 217, 255, .8);
+    
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-name: a1;
+}
+
+.ring_4 {
+    animation-duration: 2.2s;
+    z-index: 4;
+    rotate: 45deg;
+    width: 479px;
+    height: 479px;
+}
+
+.ring_3 {
+    width: 360px;
+    height: 360px;
+    animation-duration: 2.5s;
+    z-index: 3;
+    rotate: -45deg;
+}
+
+.ring_2 {
+    width: 240px;
+    height: 241px;
+    z-index: 4;
+    rotate: -115deg;
+    animation-duration: 2.1s;
+  
+}
+
+.ring_1 {
+    width: 121px;
+    height: 121px;
+    rotate: 135deg;
+    z-index: 3;
+    animation-duration: 1.5s;
+}
+
+.ring_0 {
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow:
+        0px 0px 10px rgb(0, 217, 255, .8),
+        0px 0px 20px rgb(0, 217, 255, .8),
+        0px 0px 30px rgb(0, 217, 255, .8),
+        0px 0px 40px rgb(0, 217, 255, .8),
+        0px 0px 50px rgb(0, 217, 255, .8),
+        0px 0px 60px rgb(0, 217, 255, .8),
+        0px 0px 70px rgb(0, 217, 255, .8),
+        0px 0px 80px rgb(0, 217, 255, .8),
+        0px 0px 90px rgb(0, 217, 255, .8),
+        0px 0px 100px rgb(0, 217, 255, .8),
+        0px 0px 80px rgb(0, 217, 255, .8);
+}
+
+@keyframes a1 {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+       
+    }
+
+    100% {
+        transform: rotateX(360deg) rotateY(0deg);
+    }
+}
+
+/* @keyframes a2 {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+
+ 
+
+    100% {
+        transform: rotateX(360deg) rotateY(0deg);
+    }
+}
+@keyframes a3 {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+
+    50% {
+        transform: rotateX(180deg) rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateX(360deg) rotateY(0deg);
+    }
+}
+@keyframes a4 {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+
+    50% {
+        transform: rotateX(180deg) rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateX(360deg) rotateY(0deg);
+    }
+}
+ */
